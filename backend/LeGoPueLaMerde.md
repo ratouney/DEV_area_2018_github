@@ -1,13 +1,13 @@
 # Comment faire en sorte que ce projet fonctionne
 
 Tu dois set la varialbe $GOPATH pour qu'elle inclue le repo.
-Pas le dossier `/src`, le repo. SRC est un truc obligatoire pour que go fonctionne.
+Pas le dossier `/src`, le repo. Le dossier `/src` est un truc obligatoire pour que go fonctionne.
 
 Les dépendances sont gérées de manière TRES carée et avec une structure très précise.
 
 Tout code GO sur la machine (pas le projet, ca serait trop simple...) et localisé avec $GOPATH.
 
-Donc d'abord, lancez un `go get` pour récuperer les dépendances de github et autres.
+Donc d'abord, lancez un `go get` pour récuperer les dépendances de github en étant dans le dossier `/src` !
 
 Ensuite `go run main.go` et ca devrait marcher.
 
